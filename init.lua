@@ -631,6 +631,12 @@ require('lazy').setup({
       }
     end,
   },
+  { -- AutoCompletion for TinyGo packages
+    'pcolladosoto/tinygo.nvim',
+    config = function()
+      require('tinygo').setup()
+    end,
+  },
 
   { -- Autoformat
     'stevearc/conform.nvim',
